@@ -57,8 +57,8 @@
 
 <script setup lang="ts">
 const router = useRouter();
-const movieName = ref();
-const searchPlaceHolder = ref("Buscar");
+const movieName = ref()
+const searchPlaceHolder = ref("Buscar")
 const show = ref(true);
 </script>
 
