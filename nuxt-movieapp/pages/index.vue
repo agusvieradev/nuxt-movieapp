@@ -1,6 +1,5 @@
 <template>
-      
-    <MovieCard />
+    <MovieSlider />
 </template>
 
 <script lang="ts">

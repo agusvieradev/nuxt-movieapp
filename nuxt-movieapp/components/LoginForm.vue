@@ -14,12 +14,14 @@
             <label for="password" class="text-md md:text-xl block text-base mb-1 text-white md:text-black">
                 Contraseña
             </label>
-            <input :type="seePass" v-model="password"
+            <input v-if="hidePassword" v-model="password" type="password"
+                class="border w-full text-base text-black px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600" />
+            <input v-else v-model="password" type="text"
                 class="border w-full text-base text-black px-2 py-1 focus:outline-none focus:ring-0 focus:border-gray-600" />
         </div>
         <div class="mt-3 flex justify-between items-center">
             <div>
-                <input type="checkbox" >
+                <input type="checkbox" @click="hidePassword = !hidePassword">
                 <label class="text-md md:text-lg text-white md:text-black">
                     Mostrar contraseña
                 </label>
@@ -34,7 +36,7 @@
     </div>
 </template>
 <script setup lang="ts">
-const seePass = ref("password");
+const hidePassword = ref(true);
 const password = ref("");
 const email = ref("")
 </script>

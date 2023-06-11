@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center items-center h-fit bg-grey-900">
+    <div class="flex justify-center relative items-center h-fit bg-grey-900">
         <LoginForm />
     </div>
 </template>

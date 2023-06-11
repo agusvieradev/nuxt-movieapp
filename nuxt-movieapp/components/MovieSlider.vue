@@ -1,5 +1,5 @@
 <template>
-      <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3"></div>
-      
-
+      <div class="flex flex-wrap w-screen justify-center items-center lg:mt-20 lg:p-16">
+            <MovieCard />
+      </div>
 </template>
