@@ -1,11 +1,9 @@
 <template>
-    <div class="flex justify-center items-center h-fit bg-grey-900">
-        <LoginForm />
-    </div>
+    <div >aaa</div>
 </template>
 <script lang="ts">
 definePageMeta({
-    layout: 'authentication',
+    layout:'authentication',
 
 })
 </script>
