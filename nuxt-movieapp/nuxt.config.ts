@@ -7,12 +7,11 @@ export default defineNuxtConfig({
         { name: "viewport", content: "width=devive-width, initial-scale=1.0" },
       ],
     },
-    pageTransition: { name: 'page', mode: 'out-in' }
   },
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
   ],
   devtools: { enabled: false }
 })

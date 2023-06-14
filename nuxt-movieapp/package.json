@@ -19,7 +19,8 @@
   },
   "dependencies": {
     "@egoist/tailwindcss-icons": "^1.1.0",
+    "@nuxtjs/composition-api": "^0.33.1",
     "@pinia/nuxt": "^0.4.11",
-    "@vue/composition-api": "^1.7.1"
+    "pinia": "^2.1.3"
   }
 }

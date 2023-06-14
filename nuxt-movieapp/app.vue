@@ -1,7 +1,9 @@
 <template>
-  <div class="bg-gradient-from-50% bg-gray-900 h-screen">
+  <div class="min-h-screen bg-gray-900">
     <NuxtLayout>
-      <NuxtPage />
+      <div>
+        <NuxtPage />
+      </div>
     </NuxtLayout>
   </div>
 </template>

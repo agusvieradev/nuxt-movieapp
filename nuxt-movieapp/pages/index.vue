@@ -1,9 +1,12 @@
 <template>
-    <MovieSlider />
+    <SearchBar />
+    <MoviesContainer />
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+
 definePageMeta({
-    layout: 'home-layout'
-})
+    middleware: "authenticated"
+});
+
 </script>
