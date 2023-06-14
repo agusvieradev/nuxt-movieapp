@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center relative items-center h-fit bg-grey-900">
         <div class=" w-72 p-1 shadow-lg mt-10  bg-transparent md:bg-white md:p-5 lg:p-6 md:w-80 rounded-md lg:w-96 md:mt-20"
-            @keyup.enter="handleLogin(email, password)">
+            @keyup.enter="login(email, password), handleError(email, password)">
             <h1 class="text-2xl md:text-3xl block font-bold text-white md:text-black ">
                 Iniciar sesión
             </h1>
@@ -54,19 +54,11 @@ const hidePassword: Ref<boolean> = ref(true);
 
 const { login } = useAuth();
 
-const handleError = (email: string, password: string, userData: any) => {
-    errors.value = []
+const handleError = (email: string, password: string,) => {
+    errors.value = [];
     if (!email.length || !password.length) {
         errors.value = [];
         errors.value.push("Falta usuario y/o contraseña");
-    }
-    if (email.length && !userData) {
-        errors.value = [];
-        errors.value.push("Usuario incorrecto");
-    }
-    if (password.length && userData === "Wrong password") {
-        errors.value = [];
-        errors.value.push("Contraseña incorrecta");
     }
 };
 </script>
