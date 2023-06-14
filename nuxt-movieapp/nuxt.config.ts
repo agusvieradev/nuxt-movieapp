@@ -4,14 +4,14 @@ export default defineNuxtConfig({
     head: {
       meta: [
         { charset: " UTF-8" },
-        { name: "viewport", content: "width=devive-width, initial-scale=1.0"},
+        { name: "viewport", content: "width=devive-width, initial-scale=1.0" },
       ],
     },
-    pageTransition: { name: 'page', mode: 'out-in' }
   },
   modules: [
     '@nuxtjs/tailwindcss',
-    'nuxt-icon'
+    'nuxt-icon',
+    '@pinia/nuxt',
   ],
   devtools: { enabled: false }
 })
