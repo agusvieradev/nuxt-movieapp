@@ -2,7 +2,7 @@
 
 BlockNuxter - Aplicación Vue Frontend Develope
 
-## Clone and set up
+## Clone y set up
 
 ```
     1- git clone https://github.com/agusvieradev/nuxt-movieapp.git
@@ -23,3 +23,9 @@ BlockNuxter - Aplicación Vue Frontend Develope
     No es necesario utilizar variables de entorno o una API KEY propia
 ```
 
+
+```
+    Una vez levantado el proyecto se deben usar las siguientes credenciales para iniciar sesión:
+    user: admin@admin.com
+    pass: admin
+```
