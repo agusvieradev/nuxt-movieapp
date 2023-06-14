@@ -27,19 +27,16 @@ const authServices = {
   },
   authentication: async (email, password) => {
     const user = users.find((userDb) => userDb.email === email);
-    if (user === null) {
-      return `${email} account doesn't exist`;
-    } else {
-      const matchPassword = await bcrypt.compare(password, user.password);
+    if (user) {
+      const matchPassword = await bcrypt.compare(password, user.token);
       if (matchPassword) {
         return {
           name: user.name,
           email: user.email,
-          token: user.password,
+          token: user.token,
         };
-      }
-      else{
-        return "Wrong password"
+      } else {
+        return "Wrong password";
       }
     }
   },
